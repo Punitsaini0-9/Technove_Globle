@@ -129,9 +129,6 @@ section {
     transition: all 0.3s ease-in;
 }
 
-.quick-links{
-    
-}
 
 .quick-links h1 {
     width: auto;
@@ -165,7 +162,7 @@ section {
 }
 
 .address-details img{
-    width: 150px;
+    width: 100px;
     display: flex;
     gap: 20px;
 }
