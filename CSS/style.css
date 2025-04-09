@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    font-family: "Urbanist", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    letter-spacing: normal;
+}
+
+.header {
+    display: none;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.23);
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 120px;
+    border-bottom: 1px solid black;
+}
+
+.logo {
+    max-width: 20%;
+    text-align: center;
+}
+
+.logo img {
+    width: 120px;
+}
+
+.nav-links{
+    min-width: 700px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.nav-links a{
+    color: black;
+}
+
+.nav-links button{
+    min-width: 150px;
+    height: 110px;
+    background-color: #B35900;
+    color: white;
+    border: none;
+    margin-right: 6px;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+
+.toggle-btn{
+    display: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    margin-right: 20px;
+}
+
+.dropdown-menu{
+    position: absolute;
+    right: 0;
+    display: none;
+    flex-direction: column;
+    width: 300px;
+    height: 0;
+    background-color: #d1cac396;
+    margin: 0.5rem;
+    font-size: 1.5rem;
+    padding: 1rem;
+    border-radius: 10px;
+    backdrop-filter: blur(50px);
+    overflow: hidden;
+}
+
+.dropdown-menu a{
+    color: black;
+}
+.dropdown-menu.open{
+    height: auto;
+}
+
+/* Mobile Styles */
+@media (max-width: 920px){
+    .nav-links a, button{
+        display: none;
+    }
+
+    .nav-links{
+        min-width: auto;
+    }
+
+    .toggle-btn{
+        display: block;
+    }
+    
+    .dropdown-menu{
+        display: flex;
+    }
+
+}
+
