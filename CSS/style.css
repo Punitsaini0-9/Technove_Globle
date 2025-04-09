@@ -91,9 +91,10 @@ section {
     height: auto;
     background-color: white;
     box-shadow: #dd750c6e 0px 54px 55px, #dd750c6e 0px -12px 30px, #dd750c6e 0px 4px 6px, #dd750c6e 0px 12px 13px, #dd750c6e 0px -3px 5px;
-    padding: 50px 50px;
+    padding: 10px 50px;
     border-top-right-radius: 10px;
     border-top-left-radius: 10px;
+
 }
 
 .media-logos {
@@ -129,16 +130,15 @@ section {
 }
 
 .quick-links{
-    width: auto;
+    
 }
 
 .quick-links h1 {
     width: auto;
-    text-align: center;
+    text-align: left;
     font-size: 2rem;
     padding: 5px 15px;
     color: black;
-    border-radius: 10px;
     margin: 20px 0;
     border-bottom: 2px solid #B35900;
 }
@@ -167,7 +167,6 @@ section {
 .address-details img{
     width: 150px;
     display: flex;
-    margin: 0 auto;
     gap: 20px;
 }
 
