@@ -213,6 +213,7 @@ input:checked+label+.slide {
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
     max-width: 1100px;
     margin: 60px auto;
+    height: auto;
 }
 
 .about-content {
@@ -226,6 +227,7 @@ input:checked+label+.slide {
     flex: 1;
     min-width: 300px;
     padding-right: 30px;
+    text-align: left;
 }
 
 .section-label {
