@@ -20,4 +20,4 @@ setInterval(() => {
 }, 5000);
 
 inputs[current].checked = true;
-// inputs[current].focus();
+inputs[current].focus();
