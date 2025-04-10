@@ -28,7 +28,7 @@ body {
     align-items: center;
     height: 120px;
     width: 100%;
-    /* border-bottom: 1px solid black; */
+    border-bottom: 1px solid rgba(0, 0, 0, 0.422);
     background-color: aliceblue;
     background-color: transparent;
     position: fixed;
