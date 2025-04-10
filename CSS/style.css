@@ -567,7 +567,7 @@ input:checked+label+.slide {
 
 @media (max-width: 920px) {
     .footer-details{
-        flex-wrap: wrap;
+        /* flex-wrap: wrap; */
         display: block;
         text-align: center;
     }

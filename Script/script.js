@@ -1,4 +1,4 @@
 
-window.addEventListener('load', () => {
-    document.getElementById('navbar').focus();
-});
+// window.addEventListener('load', () => {
+//     document.getElementById('navbar').focus();
+// });
