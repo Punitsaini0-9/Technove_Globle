@@ -19,8 +19,7 @@ body {
     display: none;
     justify-content: space-around;
     align-items: center;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.23);
-    
+    border-bottom: 1px solid rgba(0, 0, 0, 0.23);   
 }
 
 .navbar {
@@ -29,8 +28,9 @@ body {
     align-items: center;
     height: 120px;
     width: 100%;
-    border-bottom: 1px solid black;
+    /* border-bottom: 1px solid black; */
     background-color: aliceblue;
+    background-color: transparent;
     position: fixed;
     z-index: 1000;
 
@@ -86,7 +86,6 @@ section {
 }
 
 .sr-only {
-    position: absolute;
     pointer-events: none;
     width: 1px;
     height: 1px;
@@ -95,7 +94,6 @@ section {
 }
 
 input {
-    position: absolute;
     opacity: 0;
     margin-top: 92vh;
     cursor: pointer;
@@ -113,7 +111,7 @@ label {
     cursor: pointer;
     transition-duration: .4s;
     box-shadow: 0 0 20px 0 #000;
-    position: static;
+
 }
 
 input:checked+label {
