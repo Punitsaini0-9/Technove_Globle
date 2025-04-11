@@ -468,7 +468,12 @@ input:checked+label+.slide {
     }
   }
 
- 
+  h2 {
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #0f1950;
+  }
   
   .section-label2 {
     display: block;
@@ -486,7 +491,7 @@ input:checked+label+.slide {
 
   .subheading {
     text-align: center;
-    font-size: 1.2rem;
+    font-size: 1rem;
     color: #b35900;
     margin-top: -5px;
     margin-bottom: 30px;
