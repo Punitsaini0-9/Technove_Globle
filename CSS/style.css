@@ -468,12 +468,7 @@ input:checked+label+.slide {
     }
   }
 
-  h2 {
-    text-align: center;
-    font-size: 2rem;
-    margin-bottom: 10px;
-    color: #0f1950;
-  }
+ 
   
   .section-label2 {
     display: block;
@@ -491,7 +486,7 @@ input:checked+label+.slide {
 
   .subheading {
     text-align: center;
-    font-size: 1rem;
+    font-size: 1.2rem;
     color: #b35900;
     margin-top: -5px;
     margin-bottom: 30px;
@@ -509,6 +504,8 @@ input:checked+label+.slide {
     max-width: 900px;
     margin: 0 auto;
     margin-bottom: 90px;
+    row-gap: 30px;
+    column-gap: 30px;
   }
   
   .card {
