@@ -590,6 +590,24 @@ input:checked+label+.slide {
     }
   }
 
+
+.hr{
+    width: 95%;
+    margin: 0 auto;
+    opacity: 0.5;
+}
+
+/* contact section */
+.contact{
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    padding: 50px 100px;
+    background: #f9f9f9;
+}
+
+
+
   
 /* Footer   */
 
