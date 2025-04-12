@@ -752,9 +752,19 @@ input:checked+label+.slide {
   .client-name {
     font-weight: bold;
     font-size: 18px;
-    color: #000;
+    color: #000;
   }
 
+  @media (max-width: 768px) {
+    .arrow.left {
+      left: -30px;
+    }
+  
+    .arrow.right {
+      right: -30px;
+    }
+  }
+  
 
 /* Review Counts */
 .allReviews-sections{
