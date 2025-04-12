@@ -50,3 +50,4 @@ setInterval(() => {
 }, 5000);
 
 document.addEventListener("DOMContentLoaded", updateTestimonial);
+
