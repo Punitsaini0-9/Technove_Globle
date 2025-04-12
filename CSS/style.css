@@ -659,6 +659,18 @@ input:checked+label+.slide {
 }
 
 
+.allReviews-sections{
+    height: 20vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.counter-box{
+    
+}
+
+
 
   
 /* Footer   */
