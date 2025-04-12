@@ -2,17 +2,17 @@ const testimonials = [
   {
     text: "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.",
     name: "Client 1",
-    img: "https://randomuser.me/api/portraits/women/44.jpg",
+    img: "https://i.pravatar.cc/100?img=5" // woman
   },
   {
     text: "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.",
     name: "Client 2",
-    img: "https://randomuser.me/api/portraits/men/32.jpg",
+    img: "https://i.pravatar.cc/100?img=12" // man
   },
   {
     text: "An unknown printer took a galley of type and scrambled it to make a type specimen book.",
     name: "Client 3",
-    img: "https://randomuser.me/api/portraits/women/65.jpg",
+    img: "https://i.pravatar.cc/100?img=36" // woman
   },
 ];
 
