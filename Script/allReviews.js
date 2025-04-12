@@ -1,49 +1,51 @@
+document.addEventListener("DOMContentLoaded", () => {
+  const counters = document.querySelectorAll('.counter-box');
+  const duration = 2000;
+  const frameRate = 30;
+  const activeTimers = new Map();
 
-  document.addEventListener("DOMContentLoaded", () => {
-    const counters = document.querySelectorAll('.counter-box');
-    const duration = 2000;
-    const frameRate = 30;
-    const activeTimers = new Map();
+  const startCounting = (counterBox) => {
+    const numberElement = counterBox.querySelector('.counter-value p');
+    const plusElement = counterBox.querySelector('.plus-sign');
+    let current = 0;
+    const target = +counterBox.getAttribute('data-target');
+    const step = Math.ceil(target / (duration / frameRate));
 
-    const startCounting = (counter) => {
-      let current = 0;
-      const target = +counter.getAttribute('data-target');
-      const step = Math.ceil(target / (duration / frameRate));
+    if (activeTimers.get(counterBox)) {
+      clearInterval(activeTimers.get(counterBox));
+    }
 
-      if (activeTimers.get(counter)) {
-        clearInterval(activeTimers.get(counter)); // clear old timer if any
+    const interval = setInterval(() => {
+      current += step;
+      if (current >= target) {
+        current = target;
+        clearInterval(interval);
       }
+      numberElement.textContent = current;
+    }, 1000 / frameRate);
 
-      const interval = setInterval(() => {
-        current += step;
-        if (current >= target) {
-          current = target;
-          clearInterval(interval);
-        }
-        counter.textContent = current;
-      }, 1000 / frameRate);
+    activeTimers.set(counterBox, interval);
+  };
 
-      activeTimers.set(counter, interval);
-    };
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      const el = entry.target;
+      const numberElement = el.querySelector('.counter-value p');
+      const plusElement = el.querySelector('.plus-sign');
 
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        const el = entry.target;
-
-        if (entry.isIntersecting) {
-          el.classList.add('visible');
-          startCounting(el);
-        } else {
-          el.classList.remove('visible');
-          el.textContent = '0'; // Reset to zero
-          clearInterval(activeTimers.get(el));
-          activeTimers.delete(el);
-        }
-      });
-    }, {
-      threshold: 0.5
+      if (entry.isIntersecting) {
+        el.classList.add('visible');
+        startCounting(el);
+      } else {
+        el.classList.remove('visible');
+        numberElement.textContent = '0';
+        clearInterval(activeTimers.get(el));
+        activeTimers.delete(el);
+      }
     });
-
-    counters.forEach(counter => observer.observe(counter));
+  }, {
+    threshold: 0.5
   });
 
+  counters.forEach(counter => observer.observe(counter));
+});
