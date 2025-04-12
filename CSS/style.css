@@ -489,6 +489,7 @@ h2 {
     margin-top: 70px;
 }
 
+
 .subheading {
     text-align: center;
     font-size: 1rem;
@@ -753,7 +754,8 @@ h2 {
     border-radius: 12px;
     backdrop-filter: blur(6px);
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
-}
+    transition: opacity 0.5s ease-in-out; /* Smooth transition for switching testimonials */
+  }
 
 .client-img {
     width: 100px;
