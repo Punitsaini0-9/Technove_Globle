@@ -774,8 +774,22 @@ h2 {
     font-weight: bold;
     font-size: 18px;
     color: #000;
+<<<<<<< HEAD
 }
+=======
+  }
+>>>>>>> 68773828a5ef4ab88821e57d02c636b1f26b7b59
 
+  @media (max-width: 768px) {
+    .arrow.left {
+      left: -30px;
+    }
+  
+    .arrow.right {
+      right: -30px;
+    }
+  }
+  
 
 /* Review Counts */
 .allReviews-sections {
