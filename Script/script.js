@@ -2,17 +2,17 @@ const testimonials = [
   {
     text: "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.",
     name: "Client 1",
-    img: "https://i.pravatar.cc/100?img=5" // woman
+    img: "https://i.pravatar.cc/100?img=5"
   },
   {
     text: "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.",
     name: "Client 2",
-    img: "https://i.pravatar.cc/100?img=12" // man
+    img: "https://i.pravatar.cc/100?img=12"
   },
   {
     text: "An unknown printer took a galley of type and scrambled it to make a type specimen book.",
     name: "Client 3",
-    img: "https://i.pravatar.cc/100?img=36" // woman
+    img: "https://i.pravatar.cc/100?img=36"
   },
 ];
 
@@ -26,9 +26,6 @@ function updateTestimonial() {
 
   if (img && text && name) {
     img.src = t.img;
-    img.onerror = function () {
-      this.src = "https://via.placeholder.com/100?text=No+Image";
-    };
     text.innerText = t.text;
     name.innerText = t.name;
   }
@@ -44,10 +41,10 @@ function nextTestimonial() {
   updateTestimonial();
 }
 
+// Call this when the page is loaded
+document.addEventListener("DOMContentLoaded", updateTestimonial);
+
 // Auto-switch every 5 seconds
 setInterval(() => {
   nextTestimonial();
 }, 5000);
-
-document.addEventListener("DOMContentLoaded", updateTestimonial);
-
