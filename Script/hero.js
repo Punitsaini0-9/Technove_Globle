@@ -12,13 +12,20 @@ inputs[current].focus();
 
 window.addEventListener("scroll", function () {
     const navbar = document.querySelector(".navbar");
+    if (window.scrollY > 50) {
+        navbar.classList.add("scrolled");
+    } else {
+        navbar.classList.remove("scrolled");
+    }
+});
+
+window.addEventListener("scroll", function () {
+    const navbar = document.querySelector(".navbar");
     const hero = document.querySelector("#home");
 
-    // Get the bottom position of the hero section
-    const heroBottom = hero.offsetTop + hero.offsetHeight;
+    const heroHeight = hero.offsetHeight;
 
-    // If scrollY goes past the hero's bottom, add 'scrolled' class
-    if (window.scrollY >= heroBottom) {
+    if (window.scrollY > heroHeight - 50) { // small buffer for smoother transition
         navbar.classList.add("scrolled");
     } else {
         navbar.classList.remove("scrolled");
