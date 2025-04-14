@@ -28,13 +28,18 @@ body {
     align-items: center;
     height: 120px;
     width: 100%;
-    /* border-bottom: 1px solid rgba(0, 0, 0, 0.422); */
-    background-color: aliceblue;
     background-color: transparent;
     position: fixed;
     z-index: 1000;
-
+    background-color: transparent;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
+
+.navbar.scrolled {
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
 
 .logo {
     max-width: 20%;
@@ -50,8 +55,9 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    font-size: 1.2rem;
+    font-size: 1.15rem;
     font-weight: 700;
+    gap: 35px;
 }
 
 .nav-links a {
