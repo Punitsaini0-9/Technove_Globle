@@ -83,6 +83,61 @@ body {
     color: black;
 }
 
+/* Dropdown container */
+.dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* Dropdown button */
+  .dropbtn {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    cursor: pointer;
+    font-weight: 700;
+    text-decoration: none;
+    color: black;
+    padding: 10px 16px;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: white;
+    min-width: 220px; /* wider dropdown */
+    padding: 10px 0; /* vertical padding inside */
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1001;
+  
+    /* rounded bottom corners */
+    border-bottom-left-radius: 16px;
+    border-bottom-right-radius: 16px;
+  }
+  
+  /* Each item inside dropdown */
+  .dropdown-content a {
+    display: block;
+    padding: 14px 20px; /* more spacing */
+    text-decoration: none;
+    color: black;
+    font-size: 1.05rem;
+    font-weight: 500;
+    transition: background-color 0.3s;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #f3f3f3;
+    border-radius: 8px;
+  }
+  
+  /* Show dropdown when hovering over .dropdown (not just .dropbtn) */
+  .dropdown:hover .dropdown-content {
+      display: block;
+    }
+
 /* Hero section */
 
 section {
@@ -208,7 +263,7 @@ input:checked+label+.slide {
 }
 
 .bg4 {
-    background-image:url(/Images/hero4.png);
+    background-image:url(/Images/hero4.jpg);
 }
 
 .hero-content {
