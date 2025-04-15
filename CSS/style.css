@@ -224,7 +224,7 @@ input:checked+label+.slide+input+label::after {
 }
 
 input:focus+label {
-    box-shadow: 0 0 0 2px teal, 0 0 18px white;
+    box-shadow: 0 0 18px white;
 }
 
 .slide {
