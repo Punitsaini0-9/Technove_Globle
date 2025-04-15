@@ -96,12 +96,13 @@ body {
   font-weight: 700;
   text-decoration: none;
   color: black;
+  padding: 10px 16px;
 }
 
 .dropdown-content {
   display: none;
   position: absolute;
-  top: 230%;
+  top: 100%;
   left: 0;
   background-color: white;
   min-width: 220px; /* wider dropdown */
@@ -130,9 +131,10 @@ body {
   border-radius: 8px;
 }
 
+/* Show dropdown when hovering over .dropdown (not just .dropbtn) */
 .dropdown:hover .dropdown-content {
-  display: block;
-}
+    display: block;
+  }
 
 /* Hero section */
 
