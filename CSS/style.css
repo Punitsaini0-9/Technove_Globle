@@ -101,7 +101,7 @@ body {
 .dropdown-content {
   display: none;
   position: absolute;
-  top: 100%;
+  top: 230%;
   left: 0;
   background-color: white;
   min-width: 220px; /* wider dropdown */
