@@ -196,35 +196,40 @@ input:checked+label+.slide {
 }
 
 .bg1 {
-    background-image: url(/Images/Hero.jpg);
+    background-image:url(/Images/hero.jpg);
 }
 
 .bg2 {
-    background-image: url(/Images/hero2.jpg);
+     background-image:url(/Images/hero2.jpg);
 }
 
 .bg3 {
-    background-image: url(/Images/hero3.jpg);
+    background-image:url(/Images/hero3.jpg);
 }
 
 .bg4 {
-    background-image: url(/Images/hero4.jpg);
+    background-image:url(/Images/hero4.png);
 }
 
 .hero-content {
-    width: 600px;
+    width: 700px;
     position: absolute;
-    top: 20%;
-    right: 20%;
+    top: 30%;
+    left: 5%;
 }
 
 .hero-content h1 {
     font-size: 1rem;
+    color: white;
 }
 
 .hero-content p {
+    text-align: center;
     font-size: 2rem;
-    margin-top: 100px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    margin-top: 20px;
+    color: #000;
 }
 
 
@@ -763,8 +768,9 @@ h2 {
     border-radius: 12px;
     backdrop-filter: blur(6px);
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
-    transition: opacity 0.5s ease-in-out; /* Smooth transition for switching testimonials */
-  }
+    transition: opacity 0.5s ease-in-out;
+    /* Smooth transition for switching testimonials */
+}
 
 .client-img {
     width: 100px;
@@ -822,14 +828,14 @@ h2 {
     text-align: center;
 }
 
-.re-content h1{
+.re-content h1 {
     font-size: 3rem;
     margin-bottom: 50px;
 }
 
-.re-content p{
+.re-content p {
     font-size: 1.2rem;
-    color:rgba(255, 255, 255, 0.752)
+    color: rgba(255, 255, 255, 0.752)
 }
 
 .count-box {
@@ -854,7 +860,7 @@ h2 {
     font-size: 2rem;
     background-color: #ffffff;
     border-radius: 10px;
-    
+
     box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
 }
 

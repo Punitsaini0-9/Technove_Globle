@@ -5,7 +5,7 @@ setInterval(() => {
     image[current].checked = false; 
     current = (current + 1) % image.length;
     image[current].checked = true;
-}, 2000);
+}, 4000);
 
 inputs[current].checked = true;
 inputs[current].focus();
