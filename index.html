@@ -1,375 +1,397 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <link rel="icon" type="image/x-icon" href="/Images/image.png" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="CSS/style.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Home</title>
-  <link rel="icon" type="image/x-icon" href="/Images/image.png" />
-  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
-    rel="stylesheet" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
-    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" href="CSS/style.css" />
-</head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="logo">
+          <a href="#home">
+            <img src="Images/image.png" alt="Logo" />
+          </a>
+        </div>
 
-<body>
-  <header>
-    <nav class="navbar">
-      <div class="logo">
-        <a href="#home">
+        <div class="nav-links" id="navLinks">
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#TV">TV</a>
+          <a href="#Vehicle">Vehicle</a>
+
+          <!-- Dropdown here -->
+          <div class="dropdown">
+            <a href="#our-solution" class="dropbtn">
+              Our Solution <i class="fa-solid fa-caret-down"></i>
+            </a>
+            <div class="dropdown-content">
+              <a href="#solution1">Exprocash</a>
+              <a href="#solution2">Trade India</a>
+              <a href="#solution3">Web Development</a>
+              <a href="#solution4">Graphic Design</a>
+              <a href="#solution5">SEO Marketing</a>
+            </div>
+          </div>
+
+          <a href="#">Career</a>
+          <a href="#">Contact Us</a>
+          <button class="contact-button">
+            Contact <i class="fa-solid fa-arrow-right"></i>
+          </button>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Hero section -->
+
+    <section id="home" class="hero-section">
+      <input type="radio" id="trigger1" name="slider" />
+      <label for="trigger1"><span class="sr-only"></span></label>
+      <div class="slide bg1">
+        <div class="hero-content">
+          <h1>Technove Global Software PVT.LTD</h1>
+          <p>
+            We're not just building a website; we're creating a digital
+            masterpiece that captivates, intrigues, and converts.We're creating
+            a virtual realm where every visitor becomes a protagonist in your
+            digital narrative.
+          </p>
+        </div>
+      </div>
+
+      <input type="radio" id="trigger2" name="slider" checked autofocus />
+      <label for="trigger2"><span class="sr-only"></span></label>
+      <div class="slide bg2"></div>
+
+      <input type="radio" id="trigger3" name="slider" />
+      <label for="trigger3"><span class="sr-only"></span></label>
+      <div class="slide bg3"></div>
+
+      <input type="radio" id="trigger4" name="slider" />
+      <label for="trigger4"><span class="sr-only"></span></label>
+      <div class="slide bg4"></div>
+
+      <script src="/Script/hero.js"></script>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="about-box">
+      <div class="about-content">
+        <div class="about-text">
+          <p class="section-label">ABOUT US</p>
+          <h1>
+            PLEDGE
+            <span class="highlight">FOR</span>
+            IMPROVEMENT
+          </h1>
+          <p class="description">
+            At our company, we believe in fostering a culture of collaboration
+            and continuous learning. We encourage our employees to think outside
+            the box and come up with creative solutions to address complex
+            problems. Our work environment is dynamic and fast-paced, providing
+            ample opportunities for individuals to grow both personally and
+            professionally.
+          </p>
+          <p class="description">
+            Our association with Trade India has further strengthened our
+            commitment to providing cutting-edge solutions in the digital
+            marketplace.
+          </p>
+          <button class="cta-button">Read More</button>
+        </div>
+        <div class="about-image">
+          <div class="shape-bg"></div>
+          <img
+            src="Images/About us.png"
+            alt="Working Woman with Tech Background"
+            class="main-img"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- Services section -->
+    <section id="services" class="services-section">
+      <h2 class="section-heading">Featured Services</h2>
+
+      <div class="services-container">
+        <!-- Row 1 - 3 Cards -->
+        <div class="service-card">
+          <div class="image-container">
+            <img src="Images/Service1.png" alt="Service 1" />
+          </div>
+          <div class="icon"><i class="fa-solid fa-laptop-code"></i></div>
+          <h3>ExproCash</h3>
+          <p>
+            ExproCash offers comprehensive B2B solutions for your growth
+            businesses, providing entrepreneurs and individuals with the
+            opportunity to participate in a wide range of digital service and
+            cashless services.
+          </p>
+        </div>
+
+        <div class="service-card">
+          <div class="image-container">
+            <img src="Images/Service2.png" alt="Service 2" />
+          </div>
+          <div class="icon"><i class="fa-solid fa-brain"></i></div>
+          <h3>Trade India</h3>
+          <p>
+            The renowned B2B platform trusted by millions, to unlock a boundless
+            world of business opportunities. With our partnership, you can
+            expand your reach, and effortlessly redefine the way you do
+            business.
+          </p>
+        </div>
+
+        <div class="service-card">
+          <div class="image-container">
+            <img src="Images/Service3.avif" alt="Service 3" />
+          </div>
+          <div class="icon"><i class="fa-solid fa-shield-alt"></i></div>
+          <h3>SEO</h3>
+          <p>
+            We optimize websites for search engines, ensuring your online
+            presence doesn’t go unnoticed. Our SEO experts team member
+            strategies to improve your website’s organic traffic, one click, and
+            rankings on search engine result pages.
+          </p>
+        </div>
+
+        <!-- Row 2 - Centered 2 Cards -->
+        <div class="service-card">
+          <div class="image-container">
+            <img src="Images/Service4.avif" alt="Service 4" />
+          </div>
+          <div class="icon"><i class="fa-solid fa-stethoscope"></i></div>
+          <h3>Web Development</h3>
+          <p>
+            We're not just building a website; we're creating a digital
+            masterpiece that captivates, intrigues, and converts. Every click
+            should be a discovery, every scroll a journey, and every interaction
+            an affirmation of our commitment to excellence connect with us.
+          </p>
+        </div>
+
+        <div class="service-card">
+          <div class="image-container">
+            <img src="Images/Service5.avif" alt="Service 5" />
+          </div>
+          <div class="icon"><i class="fa-solid fa-robot"></i></div>
+          <h3>Graphics Design</h3>
+          <p>
+            Graphic design combines creativity and technology to create vibrant
+            designs. Whether creating a logo, a website, or an ad, designers use
+            their creative skills and digital tools to convey a positive message
+            and engage audiences across multiple platforms.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <hr class="hr" />
+    <!-- contact section -->
+    <section id="" class="contact">
+      <div class="contact-container">
+        <h1>We're ready to help you grow your business!</h1>
+        <p>
+          We provide a complete range of services to turn your great ideas into
+          Growing a business involves a combination of strategic planning,
+          effective marketing, operational efficiency, and customer
+          satisfaction. Here are some general tips to help you grow your
+          business
+        </p>
+        <button class="cta-button">Get More Details</button>
+      </div>
+    </section>
+
+    <!-- Services section Start -->
+    <span class="section-label2">SERVICES</span>
+    <h2>Check Our Services</h2>
+    <p class="subheading">Providing comprehensive Professional IT Services</p>
+
+    <div class="services">
+      <div class="card">
+        <div class="card-icon"><i class="fas fa-code"></i></div>
+        <h3>Website Designing</h3>
+        <p>
+          Our development process begins with a deep dive into understanding
+          your business model, Decide whether you want to use website builder or
+          code your site from scratch.
+        </p>
+        <a href="#">Read More</a>
+      </div>
+
+      <div class="card">
+        <div class="card-icon"><i class="fas fa-mobile-alt"></i></div>
+        <h3>App Development</h3>
+        <p>
+          App development is a multi-step process that involves designing,
+          coding, testing, deploying application Decided you want to develop a
+          native app a cross-platform app.
+        </p>
+        <a href="#">Read More</a>
+      </div>
+
+      <div class="card">
+        <div class="card-icon"><i class="fas fa-bullhorn"></i></div>
+        <h3>Digital Marketing</h3>
+        <p>
+          Digital marketing encompasses a broad range of online strategies
+          products, services, or brands such as search engines, social media,
+          websites, and online advertising.
+        </p>
+        <a href="#">Read More</a>
+      </div>
+
+      <div class="card">
+        <div class="card-icon"><i class="fas fa-paint-brush"></i></div>
+        <h3>Graphic Design</h3>
+        <p>
+          Our Graphic Design services are crafted communicating your message
+          effectively, whether it's through print, digital media, or any other
+          visual communication channels.
+        </p>
+        <a href="#">Read More</a>
+      </div>
+    </div>
+    <!-- Services section End-->
+
+    <!-- Testimonials section -->
+    <section class="testimonial-section">
+      <div class="overlay"></div>
+      <div class="testimonial-container">
+        <h2 class="title">Client Testimonials</h2>
+        <div class="testimonial-box">
+          <div class="arrow left" onclick="prevTestimonial()">&#10094;</div>
+          <div class="testimonial-content">
+            <img src="" alt="Client Image" class="client-img" id="clientImg" />
+            <p class="testimonial-text" id="testimonialText"></p>
+            <p class="client-name" id="clientName"></p>
+          </div>
+          <div class="arrow right" onclick="nextTestimonial()">&#10095;</div>
+        </div>
+      </div>
+          
+    </section>
+
+    <!-- Our Total Reviews -->
+    <div class="allReviews-sections">
+      <div class="our-work">
+        <div class="bg-image">
+          <div class="re-content">
+            <h1>Our Work</h1>
+            <p>
+              We provide expert Business Coaching to both individuals and
+              businesses. With over 30 years of experience we’ll ensure that
+              you’re always getting the best guidance from the top people in the
+              entire industry.
+            </p>
+          </div>
+
+          <div class="count-box">
+            <div class="counter-box" data-target="25999">
+              <div class="counter-value">
+                <p>0</p>
+                <h4 class="plus-sign">+</h4>
+              </div>
+              <div class="counter-label">
+                <h3>Our Activation</h3>
+              </div>
+            </div>
+            <div class="counter-box" data-target="396">
+              <div class="counter-value">
+                <p>0</p>
+                <h4 class="plus-sign">+</h4>
+              </div>
+              <div class="counter-label">
+                <h3>Our Happy Network</h3>
+              </div>
+            </div>
+            <div class="counter-box" data-target="1000">
+              <div class="counter-value">
+                <p>0</p>
+                <h4 class="plus-sign">+</h4>
+              </div>
+              <div class="counter-label">
+                <h3>Our Customer Review</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <script src="Script/allReviews.js"></script>
+    </div>
+
+    <!-- Footer Section  -->
+    <footer>
+      <div class="footer-details">
+        <div class="quick-links">
+          <h1>Services</h1>
+          <div class="links">
+            <a href="">Exprocash</a>
+            <a href="">Web Development</a>
+            <a href="">Graphic Design</a>
+            <a href="">SEO Marketing</a>
+          </div>
+        </div>
+
+        <div class="quick-links">
+          <h1>Quick Links</h1>
+          <div class="links">
+            <a href="">Home</a>
+            <a href="">About</a>
+            <a href="">Products</a>
+            <a href="">Career</a>
+          </div>
+        </div>
+
+        <div class="address-details">
           <img src="Images/image.png" alt="" />
-        </a>
-      </div>
+          <div class="links">
+            <a href=""
+              ><i class="fa-solid fa-location-dot"></i>G 39, G block Sector 63
+              Noida, Uttar Paradesh – 201301, India.
+            </a>
 
-      <div class="nav-links" id="navLinks">
-        <a href="#home">Home</a>
-        <a href="#about">About</a>
-        <a href="#TV">TV</a>
-        <a href="#Vehicle">Vehicle</a>
-        <a href="#our solution">Our Solution<i class="fa-solid fa-caret-down"></i></a>
-        <a href="">Career</a>
-        <a href="">Contact Us</a>
-        <button href="" class="contact-button">
-          Contact <i class="fa-solid fa-arrow-right"></i>
-        </button>
-      </div>
-    </nav>
-  </header>
+            <a href=""><i class="fa-solid fa-phone"></i>+ 91 89294-45108</a>
 
-  <!-- Hero section -->
+            <a href="">
+              <i class="fa-solid fa-envelope"></i>info@technove.co.in
+            </a>
 
-  <section id="home" class="hero-section">
-    <input type="radio" id="trigger1" name="slider" />
-    <label for="trigger1"><span class="sr-only"></span></label>
-    <div class="slide bg1">
-      <div class="hero-content">
-        <h1>Technove Global Software PVT.LTD</h1>
-        <p>
-          We're not just building a website; we're creating a digital
-          masterpiece that captivates, intrigues, and converts.We're creating
-          a virtual realm where every visitor becomes a protagonist in your
-          digital narrative.
-        </p>
-      </div>
-    </div>
-
-    <input type="radio" id="trigger2" name="slider" checked autofocus />
-    <label for="trigger2"><span class="sr-only"></span></label>
-    <div class="slide bg2"></div>
-
-    <input type="radio" id="trigger3" name="slider" />
-    <label for="trigger3"><span class="sr-only"></span></label>
-    <div class="slide bg3"></div>
-
-    <input type="radio" id="trigger4" name="slider" />
-    <label for="trigger4"><span class="sr-only"></span></label>
-    <div class="slide bg4"></div>
-
-    <script src="/Script/hero.js"></script>
-  </section>
-
-  <!-- About Us Section -->
-  <section id="about" class="about-box">
-    <div class="about-content">
-      <div class="about-text">
-        <p class="section-label">ABOUT US</p>
-        <h1>
-          PLEDGE
-          <span class="highlight">FOR</span>
-          IMPROVEMENT
-        </h1>
-        <p class="description">
-          At our company, we believe in fostering a culture of collaboration
-          and continuous learning. We encourage our employees to think outside
-          the box and come up with creative solutions to address complex
-          problems. Our work environment is dynamic and fast-paced, providing
-          ample opportunities for individuals to grow both personally and
-          professionally.
-        </p>
-        <p class="description">
-          Our association with Trade India has further strengthened our
-          commitment to providing cutting-edge solutions in the digital
-          marketplace.
-        </p>
-        <button class="cta-button">Read More</button>
-      </div>
-      <div class="about-image">
-        <div class="shape-bg"></div>
-        <img src="Images/About us.png" alt="Working Woman with Tech Background" class="main-img" />
-      </div>
-    </div>
-  </section>
-
-  <!-- Services section -->
-  <section id="services" class="services-section">
-    <h2 class="section-heading">Featured Services</h2>
-
-    <div class="services-container">
-      <!-- Row 1 - 3 Cards -->
-      <div class="service-card">
-        <div class="image-container">
-          <img src="Images/Service1.png" alt="Service 1" />
-        </div>
-        <div class="icon"><i class="fa-solid fa-laptop-code"></i></div>
-        <h3>ExproCash</h3>
-        <p>
-          ExproCash offers comprehensive B2B solutions for your growth
-          businesses, providing entrepreneurs and individuals with the
-          opportunity to participate in a wide range of digital service and
-          cashless services.
-        </p>
-      </div>
-
-      <div class="service-card">
-        <div class="image-container">
-          <img src="Images/Service2.png" alt="Service 2" />
-        </div>
-        <div class="icon"><i class="fa-solid fa-brain"></i></div>
-        <h3>Trade India</h3>
-        <p>
-          The renowned B2B platform trusted by millions, to unlock a boundless
-          world of business opportunities. With our partnership, you can
-          expand your reach, and effortlessly redefine the way you do
-          business.
-        </p>
-      </div>
-
-      <div class="service-card">
-        <div class="image-container">
-          <img src="Images/Service3.avif" alt="Service 3" />
-        </div>
-        <div class="icon"><i class="fa-solid fa-shield-alt"></i></div>
-        <h3>SEO</h3>
-        <p>
-          We optimize websites for search engines, ensuring your online
-          presence doesn’t go unnoticed. Our SEO experts team member
-          strategies to improve your website’s organic traffic, one click, and
-          rankings on search engine result pages.
-        </p>
-      </div>
-
-      <!-- Row 2 - Centered 2 Cards -->
-      <div class="service-card">
-        <div class="image-container">
-          <img src="Images/Service4.avif" alt="Service 4" />
-        </div>
-        <div class="icon"><i class="fa-solid fa-stethoscope"></i></div>
-        <h3>Web Development</h3>
-        <p>
-          We're not just building a website; we're creating a digital
-          masterpiece that captivates, intrigues, and converts. Every click
-          should be a discovery, every scroll a journey, and every interaction
-          an affirmation of our commitment to excellence connect with us.
-        </p>
-      </div>
-
-      <div class="service-card">
-        <div class="image-container">
-          <img src="Images/Service5.avif" alt="Service 5" />
-        </div>
-        <div class="icon"><i class="fa-solid fa-robot"></i></div>
-        <h3>Graphics Design</h3>
-        <p>
-          Graphic design combines creativity and technology to create vibrant
-          designs. Whether creating a logo, a website, or an ad, designers use
-          their creative skills and digital tools to convey a positive message
-          and engage audiences across multiple platforms.
-        </p>
-      </div>
-    </div>
-  </section>
-
-  <hr class="hr" />
-  <!-- contact section -->
-  <section id="" class="contact">
-    <div class="contact-container">
-      <h1>We're ready to help you grow your business!</h1>
-      <p>
-        We provide a complete range of services to turn your great ideas into
-        Growing a business involves a combination of strategic planning,
-        effective marketing, operational efficiency, and customer
-        satisfaction. Here are some general tips to help you grow your
-        business
-      </p>
-      <button class="cta-button">Get More Details</button>
-    </div>
-  </section>
-
-
-  <!-- Services section Start -->
-  <span class="section-label2">SERVICES</span>
-  <h2>Check Our Services</h2>
-  <p class="subheading">Providing comprehensive Professional IT Services</p>
-
-  <div class="services">
-    <div class="card">
-      <div class="card-icon"><i class="fas fa-code"></i></div>
-      <h3>Website Designing</h3>
-      <p>
-        Our development process begins with a deep dive into understanding
-        your business model, Decide whether you want to use website builder or
-        code your site from scratch.
-      </p>
-      <a href="#">Read More</a>
-    </div>
-
-    <div class="card">
-      <div class="card-icon"><i class="fas fa-mobile-alt"></i></div>
-      <h3>App Development</h3>
-      <p>
-        App development is a multi-step process that involves designing,
-        coding, testing, deploying application Decided you want to develop a
-        native app a cross-platform app.
-      </p>
-      <a href="#">Read More</a>
-    </div>
-
-    <div class="card">
-      <div class="card-icon"><i class="fas fa-bullhorn"></i></div>
-      <h3>Digital Marketing</h3>
-      <p>
-        Digital marketing encompasses a broad range of online strategies
-        products, services, or brands such as search engines, social media,
-        websites, and online advertising.
-      </p>
-      <a href="#">Read More</a>
-    </div>
-
-    <div class="card">
-      <div class="card-icon"><i class="fas fa-paint-brush"></i></div>
-      <h3>Graphic Design</h3>
-      <p>
-        Our Graphic Design services are crafted communicating your message
-        effectively, whether it's through print, digital media, or any other
-        visual communication channels.
-      </p>
-      <a href="#">Read More</a>
-    </div>
-  </div>
-  <!-- Services section End-->
-
-  <!-- Testimonials section -->
-  <section class="testimonial-section">
-    <div class="overlay"></div>
-    <div class="testimonial-container">
-      <h2 class="title">Client Testimonials</h2>
-      <div class="testimonial-box">
-        <div class="arrow left" onclick="prevTestimonial()">&#10094;</div>
-        <div class="testimonial-content">
-          <img src="" alt="Client Image" class="client-img" id="clientImg" />
-          <p class="testimonial-text" id="testimonialText"></p>
-          <p class="client-name" id="clientName"></p>
-        </div>
-        <div class="arrow right" onclick="nextTestimonial()">&#10095;</div>
-      </div>
-    </div>
-        
-  </section>
-
-  <!-- Our Total Reviews -->
-  <div class="allReviews-sections">
-    <div class="our-work">
-
-
-      <div class="bg-image">
-        <div class="re-content">
-          <h1>Our Work</h1>
-          <p>We provide expert Business Coaching to both individuals and businesses. With over 30 years of experience
-            we’ll
-            ensure that you’re always getting the best guidance from the top people in the entire industry.</p>
-        </div>
-       
-        <div class="count-box">
-          <div class="counter-box" data-target="25999">
-            <div class="counter-value">
-              <p>0</p>
-              <h4 class="plus-sign">+</h4>
-            </div>
-            <div class="counter-label">
-              <h3>Our Activation</h3>
-            </div>
-          </div>
-          <div class="counter-box" data-target="396">
-            <div class="counter-value">
-              <p>0</p>
-              <h4 class="plus-sign">+</h4>
-            </div>
-            <div class="counter-label">
-              <h3>Our Happy Network</h3>
-            </div>
-          </div>
-          <div class="counter-box" data-target="1000">
-            <div class="counter-value">
-              <p>0</p>
-              <h4 class="plus-sign">+</h4>
-            </div>
-            <div class="counter-label">
-              <h3>Our Customer Review</h3>
+            <div class="logos">
+              <a href=""><i class="fa-brands fa-facebook"></i></a>
+              <a href=""><i class="fa-brands fa-twitter"></i></a>
+              <a href=""><i class="fa-brands fa-instagram"></i></a>
+              <a href=""><i class="fa-brands fa-linkedin"></i></a>
+              <a href=""><i class="fa-brands fa-youtube"></i></a>
             </div>
           </div>
         </div>
-
       </div>
-    </div>
-    <script src="Script/allReviews.js"></script>
-  </div>
-
-  <!-- Footer Section  -->
-  <footer>
-    <div class="footer-details">
-      <div class="quick-links">
-        <h1>Services</h1>
-        <div class="links">
-          <a href="">Exprocash</a>
-          <a href="">Web Development</a>
-          <a href="">Graphic Design</a>
-          <a href="">SEO Marketing</a>
-        </div>
+      <div class="last-footer">
+        <p>
+          &copy; 2024 Technove Global Software PVT.LTD. All rights reserved.
+        </p>
+        <a href="">Terms & Conditions | Privacy Policy</a>
       </div>
-
-      <div class="quick-links">
-        <h1>Quick Links</h1>
-        <div class="links">
-          <a href="">Home</a>
-          <a href="">About</a>
-          <a href="">Products</a>
-          <a href="">Career</a>
-        </div>
-      </div>
-
-      <div class="address-details">
-        <img src="Images/image.png" alt="" />
-        <div class="links">
-          <a href=""><i class="fa-solid fa-location-dot"></i>G 39, G block Sector 63
-            Noida, Uttar Paradesh – 201301, India.
-          </a>
-
-          <a href=""><i class="fa-solid fa-phone"></i>+ 91 89294-45108</a>
-
-          <a href="">
-            <i class="fa-solid fa-envelope"></i>info@technove.co.in
-          </a>
-
-          <div class="logos">
-            <a href=""><i class="fa-brands fa-facebook"></i></a>
-            <a href=""><i class="fa-brands fa-twitter"></i></a>
-            <a href=""><i class="fa-brands fa-instagram"></i></a>
-            <a href=""><i class="fa-brands fa-linkedin"></i></a>
-            <a href=""><i class="fa-brands fa-youtube"></i></a>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="last-footer">
-      <p>
-        &copy; 2024 Technove Global Software PVT.LTD. All rights reserved.
-      </p>
-      <a href="">Terms & Conditions | Privacy Policy</a>
-    </div>
-  </footer>
-  <script src="Script/script.js"></script>
-</body>
-
+    </footer>
+    <script src="Script/script.js"></script>
+  </body>
 </html>
